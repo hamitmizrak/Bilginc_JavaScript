@@ -8,11 +8,20 @@ html{
     font-size: 15px;
 }
 
+/* HEADER */
 header{
     height: 80vh;
     padding-top:15rem ;
-    background-image: url("/");
+    background-image: url("../../dist/img/header.jpg");
     background-position: 50% 50%;
     background-size: cover;
+}
+
+/* FOOTER */
+footer{
+    min-height: 20rem;
+    width: auto;
+    background-color: #262525;
+    color:white;
 }
 
