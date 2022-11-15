@@ -17,6 +17,7 @@ npm install webpack --save-dev
 npm install webpack-cli --save-dev
 npm install -g live-server
 npm install webpack-dev-server --save-dev
+npm install html-webpack-plugin --save-dev
 
 npm i bootstrap --save-dev
 npm uninstall bootstrap  
