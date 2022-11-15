@@ -27,44 +27,49 @@ $(document).ready(function () {
 // login :
 $(function () {
     $("#submit_id").on("click", function () {
-        let userEmail,userPassword;
+        let userEmail, userPassword;
         //email
         //password
     })
-}
+})
 
-// Register Validation
+
+//login register
+//registerId  registerModal
 $(document).ready(function () {
-    $("#form_register_id").validate({
+    $("#basic-form").validate({
         errorClass: "error fail-alert",
         validClass: "valid success-alert",
-        rules: { //start rules
+        rules: {
             name: {
                 required: true,
                 minlength: 3,
             },
-
             password: {
                 required: true,
-                number: true,
-                min: 8,
-                password: true,
+                //number: true,
+                //min: 8,
+                //password: true,
             },
-
             email: {
                 required: true,
                 email: true,
             },
-        }, // end rules
+        },
         messages: {
             name: {
                 minlength: "Minumum 3 karakter giriniz",
-                required: "Ad alanını boş geçemezsiniz"
+                required: "Ad alanı boş geçemezsiniz",
             },
             password: {
-                required: "Şifre alanını boş geçemezsiniz",
-                email: "Email formatında girmediniz. örnek:examples@deneme.com.."
+                required: "Şifre  alanını boş geçemezsiniz",
+                //number: "Lütfen sayısal değer giriniz",
+                //min: "şifre için en az 8 karakter olmalı",
             },
-        }, //end messages
+            email: {
+                required: "Email alanını boş geçemezsiniz",
+                email: "Email formatında girmediniz örneğin: xyz@deneme.com",
+            },
+        },
     });
 });

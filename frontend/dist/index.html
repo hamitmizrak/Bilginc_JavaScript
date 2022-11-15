@@ -51,7 +51,7 @@
 
 <!-- External CSS -->
 <link rel="stylesheet" href="../dist/css/style.css">
-<script defer src="js/bundle.js"></script>
+
 <script defer src="js/bundle.js"></script></head>
 
 <body>
@@ -76,11 +76,15 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user-check"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <button data-bs-toggle="modal" data-bs-target="#modalId" class="dropdown-item"
-                                href="#">Register</button>
-                            <a class="dropdown-item" href="#">Action 2</a>
+                            <button class="dropdown-item" data-bs-toggle="modal"
+                                data-bs-target="#login_id">Login</button>
+
+                            <button class="dropdown-item" data-bs-toggle="modal"
+                                data-bs-target="#register_id">Register</button>
+
+
                         </div>
                     </li>
                 </ul>
@@ -92,45 +96,96 @@
         </div>
     </nav>
 
+
     <!-- Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
-        aria-labelledby="modalTitleId" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl" role="document">
+    <div class="modal fade" id="register_id" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">Register</h5>
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="post" id="form_register_id" autocomplete="on">
-                        <!-- name -->
-                        <div class="form-group mb-3">
-                            <input type="text" id="name" class="form-control" placeholder="En az 3 karakter giriniz"
-                                autofocus />
+                    <form id="basic-form" action="" method="post">
+
+                        <div class="form-group">
+                            <input id="name" name="name" class="form-control" placeholder="en az 3 karakter giriniz">
                         </div>
 
-                        <!-- password -->
-                        <div class="form-group mb-3">
-                            <input type="text" id="password" class="form-control" placeholder="şifrenizi giriniz" />
+                        <div class="form-group">
+                            <input id="password" name="password" class="form-control" placeholder="parolanız">
                         </div>
 
-                        <!-- email -->
-                        <div class="form-group mb-3">
-                            <input type="text" id="email" class="form-control" placeholder="Email Adresinizi Giriniz" />
+                        <div class="form-group">
+                            <input id="email" name="email" class="form-control" placeholder="Emailinizi giriniz">
                         </div>
-                        <div class="btn-group mt-3 mb-2">
-                            <input type="reset" class="btn btn-danger mr-3" value="Temizle" />
-                            <input type="submit" class="btn btn-primary" value="Gönder" />
+
+                        <div class="btn-group mt-3">
+                            <input type="reset" class="btn btn-danger mr-3" value="Temizle">
+                            <input type="submit" class="btn btn-primary" value="Gönder">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(document.getElementById('register_id'), options)
+
+    </script>
+
+
+    <!-- Login -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="login_id" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2">email Adres</div>
+                                <div class="col-md-10">
+                                    <input type="text" id="email_id" class="form-control" autofocus />
+                                </div>
+
+                                <div class="col-md-2">password</div>
+                                <div class="col-md-10">
+                                    <input type="password" id="password_id" class="form-control" />
+                                </div>
+
+                                <div class="col-md-2"></div>
+                                <div class="col-md-10">
+                                    <input type="reset" class="btn btn-danger mr-3" value="Temizle" />
+                                    <button type="submit" class="btn btn-primary" id="submit_id">Gönder</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- start header -->
     <header>
@@ -155,12 +210,6 @@
         <p class="text-center">&copy; Footer</p>
     </footer>
     <!-- end footer -->
-
-
-    <!-- Optional: Place to the bottom of scripts -->
-    <script>
-        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-    </script>
 
     <!--end codes-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
