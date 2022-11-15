@@ -4,6 +4,21 @@
 node -v
 npm -v
 
+```sh
+npm run dev    ==> test       (2.47 KB)
+npm run build  ==> production (224 byte)
+live-server
+npm run start
+```
+
+
+```sh
+npm install webpack --save-dev
+npm install webpack-cli --save-dev
+npm install -g live-server
+npm install webpack-dev-server --save-dev
+```
+
 
 ```sh
 npm init
@@ -19,11 +34,4 @@ cat >> index.js
 npm install webpack
 npm install webpack --save-dev 
 npm i -g webpack
-```
-
-```sh
-npm install webpack --save-dev
-npm install webpack-cli --save-dev
-npm install -g live-server
-npm install webpack-dev-server --save-dev
 ```
