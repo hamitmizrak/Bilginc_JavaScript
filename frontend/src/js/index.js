@@ -27,7 +27,9 @@ $(document).ready(function () {
 // login :
 $(function () {
     $("#submit_id").on("click", function () {
-        alert("deneme")
+        let userEmail,userPassword;
+        //email
+        //password
     })
 }
 
