@@ -1,3 +1,9 @@
+#special data
+frontend/node_modules
+log
+memory_persist
+
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
