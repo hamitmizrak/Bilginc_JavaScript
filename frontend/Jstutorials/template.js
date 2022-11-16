@@ -1,14 +1,14 @@
-/* 
-console.log("console.log data")
-document.write("deneme<br/>")
-alert("deneme")
-""
-''
-``
-*/
-//dynamics variable
-//global scope
-//var
+// /* 
+// console.log("console.log data")
+// document.write("deneme<br/>")
+// alert("deneme")
+// ""
+// ''
+// ``
+// */
+// dynamics variable
+// global scope
+// var
 // var valueData = "Data value 55 66";
 // document.write(valueData + "<br/>")
 // var value1 = "Data";
@@ -22,7 +22,7 @@ alert("deneme")
 
 // //const
 // const value4 = 3.14;
-//let value1 = 44;
+// let value1 = 44;
 // let value2 = 44.56;
 // let value3 = 3 > 1;
 // let value4 = [];
@@ -32,7 +32,7 @@ alert("deneme")
 // value6="Merhabalar";
 // let value6;
 
-//typeof
+// typeof
 // let value1 = 44;
 // console.log(typeof value1);
 
@@ -51,7 +51,7 @@ alert("deneme")
 // let value6 = {};
 // console.log(typeof value6)
 
-//undefined
+// undefined
 // let data;
 // console.log(data);
 
@@ -63,29 +63,29 @@ alert("deneme")
 // let data3=Number("asd")/14;
 // console.log(data3)
 
-//let number=Number(prompt("Lütfen sayı giriniz"));
+// let number=Number(prompt("Lütfen sayı giriniz"));
 
-//Escape => 
-//console.log("1.satır\n2.satır")
+// Escape => 
+// console.log("1.satır\n2.satır")
 
-//Math
-//console.log(Math.min(2,5,3,8,-99))
+// Math
+// console.log(Math.min(2,5,3,8,-99))
 
-//bilimsel gösterim
+// bilimsel gösterim
 // let bilimsel=12E-5;
 // console.log(bilimsel)
 
-//CAST
-//Number("14")
-//String(14)
+// CAST
+// Number("14")
+// String(14)
 
-//String
+// String
 
-//Function
-//DRY
+// Function
+// DRY
 
-//Normal Function
-//1
+// Normal Function
+// 1
 // function returnsuzParametresiz(){
 // document.write("returnsuz Parametresiz<br/>")
 // }
@@ -110,7 +110,7 @@ alert("deneme")
 // let data2=returnluParametreli();
 
 
-//Normal Function
+// Normal Function
 // function returnsuzParametresiz(){
 // document.write("Normal Function <br/>")
 // }
@@ -130,17 +130,17 @@ alert("deneme")
 // value2();
 
 
-//Immedia Function
+// Immedia Function
 // (
 //     function(){
 //         console.log("deneme")
 //     }
 // )();
 
-//////////////////////////////////////////////
-//callback:bir fonksiyona bizler parametre veriyoruz ve sonra fonksiyonu tekrar çağır.
+// ////////////////////////////////////////////
+// callback:bir fonksiyona bizler parametre veriyoruz ve sonra fonksiyonu tekrar çağır.
 
-//first function
+// first function
 // function callBackFirst(number){
 //     console.log(Math.pow(number,2));
 // }
@@ -151,53 +151,53 @@ alert("deneme")
 //     callback(userData);
 // }
 
-//callbackfunction ==> SP(Monad)
-//callBackSecond(callBackFirst);
-//////////////////////////////////////////////
+// callbackfunction ==> SP(Monad)
+// callBackSecond(callBackFirst);
+// ////////////////////////////////////////////
 
-//setInterval
-let timeSchedule = () => {
-    setInterval(function () {
-        console.log("merhabalar")
-    }, 2000);
-};
-//timeSchedule()
+// setInterval
+// let timeSchedule = () => {
+//     setInterval(function () {
+//         console.log("merhabalar")
+//     }, 2000);
+// };
+// timeSchedule()
 
-//////////////////////////////////////////////
+// ////////////////////////////////////////////
 
 // CALLBACKFUNCTION
 // callback beklediğimiz zamanda önce gelirse
 // parameters yanlış verilirse(asign)
 // Callback function çağrılmaz
-//computer
-let callBackComputer = () => {
-    //computer Object
-    const computer = [
-        { computerName: "computer 1", price: 10 },
-        { computerName: "computer 2", price: 20 },
-        { computerName: "computer 3", price: 30 }
-    ];
-    //console.log(computer)
+// computer
+// let callBackComputer = () => {
+//     computer Object
+//     const computer = [
+//         { computerName: "computer 1", price: 10 },
+//         { computerName: "computer 2", price: 20 },
+//         { computerName: "computer 3", price: 30 }
+//     ];
+//     console.log(computer)
 
-    //her bir elemana erişim sağladım
-    const listComputer = () => {
-        computer.map(temp => {
-            console.log(temp.computerName)
-        });
-    };
+//     her bir elemana erişim sağladım
+//     const listComputer = () => {
+//         computer.map(temp => {
+//             console.log(temp.computerName)
+//         });
+//     };
 
-    //push CallBackFunction
-    const addComputer = (trade, callback) => {
-        computer.push(trade);
-        callback();
-    }
-    // object yeni veriler ekledik
-    addComputer({ computerName: "computer 4", price: 40 }, listComputer)
-}
-//callBackComputer()
+//     push CallBackFunction
+//     const addComputer = (trade, callback) => {
+//         computer.push(trade);
+//         callback();
+//     }
+//     object yeni veriler ekledik
+//     addComputer({ computerName: "computer 4", price: 40 }, listComputer)
+// }
+// callBackComputer()
 
-///////////////////////////////////////////////////////////
-//PROMISE
+// /////////////////////////////////////////////////////////
+// PROMISE
 // ********Callback sıkıntıları****************
 // pending: bekleniyor
 // resolve:eğer istediğimze ulaştıysak
@@ -254,315 +254,315 @@ let callBackComputer = () => {
 //     console.log("data is not "+error)
 // })
 
-//Promise Examples
+// Promise Examples
 
-///////////////////////////////////////////////////////////
-//Promise Examples
-let promiseComputer = () => {
-    //computer object
-    const computer = [
-        { computerName: "computer 1", price: 10 },
-        { computerName: "computer 2", price: 20 },
-        { computerName: "computer 3", price: 30 }
-    ];
+// /////////////////////////////////////////////////////////
+// Promise Examples
+// let promiseComputer = () => {
+//     computer object
+//     const computer = [
+//         { computerName: "computer 1", price: 10 },
+//         { computerName: "computer 2", price: 20 },
+//         { computerName: "computer 3", price: 30 }
+//     ];
 
-    //Computer Map List
-    const listComputer = () => {
-        computer.map(temp => {
-            console.log(temp.computerName);
-        });
-    };
+//     Computer Map List
+//     const listComputer = () => {
+//         computer.map(temp => {
+//             console.log(temp.computerName);
+//         });
+//     };
 
-    //push promise
-    const addComputer = (trade) => {
-        const promiseReturn = new Promise((resolve, reject) => {
-            computer.push(trade);
-        });
-        return promiseReturn;
-    };
+//     push promise
+//     const addComputer = (trade) => {
+//         const promiseReturn = new Promise((resolve, reject) => {
+//             computer.push(trade);
+//         });
+//         return promiseReturn;
+//     };
 
-    // addComputer (promise)
-    addComputer({ computerName: "computer 4", price: 40 })
-        .then(() => {
-            console.log("new item")
-        }).catch((error) => {
-            console.log(error)
-        });
+//     addComputer (promise)
+//     addComputer({ computerName: "computer 4", price: 40 })
+//         .then(() => {
+//             console.log("new item")
+//         }).catch((error) => {
+//             console.log(error)
+//         });
 
-    //   const resultAsynAwait= async () =>{
-    //         const firtsDataValue = await addComputer({ computerName: "computer 4", price: 40 })
-    //         console.log("new item" + firtsDataValue)
-    //     }
-    //    resultAsynAwait()
+//       const resultAsynAwait= async () =>{
+//             const firtsDataValue = await addComputer({ computerName: "computer 4", price: 40 })
+//             console.log("new item" + firtsDataValue)
+//         }
+//        resultAsynAwait()
 
-    listComputer()
-}
-//promiseComputer()
+//     listComputer()
+// }
+// promiseComputer()
 
-///////////////////////////////////////////////////////////
-//async Await
-let asyncAwaitComputer = () => {
-    //computer object
-    const computer = [
-        { computerName: "computer 1", price: 10 },
-        { computerName: "computer 2", price: 20 },
-        { computerName: "computer 3", price: 30 }
-    ];
+// /////////////////////////////////////////////////////////
+// async Await
+// let asyncAwaitComputer = () => {
+//     computer object
+//     const computer = [
+//         { computerName: "computer 1", price: 10 },
+//         { computerName: "computer 2", price: 20 },
+//         { computerName: "computer 3", price: 30 }
+//     ];
 
-    //computer Map List
-    const listComputer = () => {
-        computer.map(temp => {
-            console.log(temp.computerName)
-        });
-    };
+//     computer Map List
+//     const listComputer = () => {
+//         computer.map(temp => {
+//             console.log(temp.computerName)
+//         });
+//     };
 
-    //push promise
-    const addComputer = (trade) => {
-        const promiseReturn = new Promise((resolve, reject) => {
-            computer.push(trade);
-        });
-        return promiseReturn;
-    }
+//     push promise
+//     const addComputer = (trade) => {
+//         const promiseReturn = new Promise((resolve, reject) => {
+//             computer.push(trade);
+//         });
+//         return promiseReturn;
+//     }
 
-    //Promise (ES7)
-    // addComputer({ computerName: "computer 4", price: 40 })
-    // .then(() => {
-    //     console.log("new item")
-    // }).catch((error) => {
-    //     console.log(error)
-    // });
+//     Promise (ES7)
+//     addComputer({ computerName: "computer 4", price: 40 })
+//     .then(() => {
+//         console.log("new item")
+//     }).catch((error) => {
+//         console.log(error)
+//     });
 
-    //Asyn /Await(ES8)
-    async function resultAsynAwait() {
-        const firsDataValue = await addComputer({ computerName: "computer 4", price: 40 });
-        console.log(firsDataValue);
-    }
-    resultAsynAwait();
+//     Asyn /Await(ES8)
+//     async function resultAsynAwait() {
+//         const firsDataValue = await addComputer({ computerName: "computer 4", price: 40 });
+//         console.log(firsDataValue);
+//     }
+//     resultAsynAwait();
 
-    listComputer();
-}
-//asyncAwaitComputer();
+//     listComputer();
+// }
+// asyncAwaitComputer();
 
-////////////////////////////////////////////////////////////////////////////////////
-let promiseData3 = () => {
-    //1.function çalıştıktıktan sonra 2.function çalışsın
-    //1.value  start
-    function fistData(value1) {
-        return new Promise((resolve, reject) => {
-            console.log("1.veri başlıyor...")
-            if (value1)
-                resolve("1.veri çalıştı")
-            else {
-                reject("1.veri çalışmadı !!!!")
-            }
-        });
-    }; //ends 1.value
+// //////////////////////////////////////////////////////////////////////////////////
+// let promiseData3 = () => {
+//     1.function çalıştıktıktan sonra 2.function çalışsın
+//     1.value  start
+//     function fistData(value1) {
+//         return new Promise((resolve, reject) => {
+//             console.log("1.veri başlıyor...")
+//             if (value1)
+//                 resolve("1.veri çalıştı")
+//             else {
+//                 reject("1.veri çalışmadı !!!!")
+//             }
+//         });
+//     }; //ends 1.value
 
-    //2.value
-    function secondData(value2) {
-        return new Promise((resolve, reject) => {
-            console.log("2.veri başlıyor ...")
-            if (value2)
-                resolve("2.veri çalıştı")
-            else
-                reject("2.veri çalışmadı")
-        });//end Promise
-    }; //end secondData
+//     2.value
+//     function secondData(value2) {
+//         return new Promise((resolve, reject) => {
+//             console.log("2.veri başlıyor ...")
+//             if (value2)
+//                 resolve("2.veri çalıştı")
+//             else
+//                 reject("2.veri çalışmadı")
+//         });//end Promise
+//     }; //end secondData
 
-    //Promise chain
-    let isLogin = true;
-    fistData(isLogin)
-        .then(temp => {
-            console.log(temp);
-            let permission = false;
-            return secondData(permission);
-        }).then(temp => {
-            console.log(temp)
-        }).catch(err => {
-            console.log(err)
-        });
-}
-//promiseData3();
+//     Promise chain
+//     let isLogin = true;
+//     fistData(isLogin)
+//         .then(temp => {
+//             console.log(temp);
+//             let permission = false;
+//             return secondData(permission);
+//         }).then(temp => {
+//             console.log(temp)
+//         }).catch(err => {
+//             console.log(err)
+//         });
+// }
+// promiseData3();
 
-////////////////////////////////////////////////////////////////////////////////////
-let asynAwait3 = () => {
+// //////////////////////////////////////////////////////////////////////////////////
+// let asynAwait3 = () => {
 
-    //1.value  start
-    function login(result) {
-        return new Promise((resolve, reject) => {
-            console.log("Sisteme Giriliyor ...")
-            if (result)
-                resolve("Login yapıldı Admin sayfasına yönlendiriliyorsunuz")
-            else
-                reject("Lütfen kayıt olunuz")
-        });//end Promise
-    }//end login
+//     1.value  start
+//     function login(result) {
+//         return new Promise((resolve, reject) => {
+//             console.log("Sisteme Giriliyor ...")
+//             if (result)
+//                 resolve("Login yapıldı Admin sayfasına yönlendiriliyorsunuz")
+//             else
+//                 reject("Lütfen kayıt olunuz")
+//         });//end Promise
+//     }//end login
 
-    //2.value
-    function admin(result) {
-        return new Promise((resolve, reject) => {
-            console.log("Gizli sayfaya Giriliyor ...")
-            //Ternary Data
-            let resultData = (result) ? resolve("Gizli sayfa yönlendiriliyor") : reject("Yetkiniz bulunmuyor");
-        }) //end Promise
-    }// end admin
+//     2.value
+//     function admin(result) {
+//         return new Promise((resolve, reject) => {
+//             console.log("Gizli sayfaya Giriliyor ...")
+//             Ternary Data
+//             let resultData = (result) ? resolve("Gizli sayfa yönlendiriliyor") : reject("Yetkiniz bulunmuyor");
+//         }) //end Promise
+//     }// end admin
 
-    //Asyn Await (1.YOL)
-    // async function resultAsynAwait() {
-    //     let isLogin = true;
-    //     const isadmin = await login(isLogin);
-    //     console.log("Login yapıldı Admin sayfasına yönlendiriliyorsunuz")
+//     Asyn Await (1.YOL)
+//     async function resultAsynAwait() {
+//         let isLogin = true;
+//         const isadmin = await login(isLogin);
+//         console.log("Login yapıldı Admin sayfasına yönlendiriliyorsunuz")
 
-    //     let isJwtToken = true;
-    //     const permission = await admin(isJwtToken);
-    //     console.log(permission)
-    // }
+//         let isJwtToken = true;
+//         const permission = await admin(isJwtToken);
+//         console.log(permission)
+//     }
 
-    //Asyn Await (2.YOL)
-    let resultAsynAwait = async () => {
-        try {
-            let isLogin = true;
-            const isadmin = await login(isLogin);
-            console.log("Login yapıldı Admin sayfasına yönlendiriliyorsunuz")
-
-
-            let isJwtToken = true;
-            const permission = await admin(isJwtToken);
-            console.log(permission)
-        } catch (err) {
-            console.log(err);
-            //console.log(err.name);
-            //console.log(err.message);
-        }
-    }
-    resultAsynAwait()
-}
-//asynAwait3() 
-
-////////////////////////////////////////////////////////////////////////////////////
-let arrayData = function () {
-    //diziler sıfırncı (indis) başlar
-    let arr = [];
-    arr[0] = "Merhabalar";
-    arr[1] = 44;
-    arr[2] = 55.63;
-    arr[3] = true;
-    console.log(arr);
-    console.log(arr[0]);
-    console.log(arr[3]);
-    console.log(arr[arr.length - 1]);
-}
-//arrayData();
-
-//Random 5 tane sayı üretsin 
-let createArrayData = () => {
-    let temp;
-    let dizi = [];
-    for (let i = 0; i < 5; i++) {
-        //round: 3.4
-        temp = Math.round(Math.random() * 7 + 1);
-        dizi[i] = temp;
-    }
-    return dizi;
-}
-
-let showArrayData = () => {
-    console.log(createArrayData());
-    let resultArray = createArrayData();
-    //iterative for
-    document.write("<br/>iterative for<br/>");
-    for (let i = 0; i < resultArray.length; i++) {
-        document.write(resultArray[i] + " ");
-    }
-    document.write("<br/>");
-
-    //For IN =>(for Over Index) eğer indis sayısı gerekiyorsa
-    //(dizideki indisler)
-    for (let temp in resultArray) {
-        document.write(temp + " ");
-    }
-
-    document.write("<br/>");
-    document.write("<br/> for IN<br/>");
-    for (let temp in resultArray) {
-        document.write(resultArray[temp] + " ");
-    }
-
-    document.write("<br/>");
-    //For OF =>(for over member) 
-    //(dizideki elemanlar)
-    document.write("<br/> for OF<br/>");
-    for (let temp of resultArray) {
-        document.write(temp + " ");
-    }
-
-    document.write("<br/>");
-    document.write("<br/> forEach<br/>");
-    //dizi eleman toplamını
-    let sumData = 0;
-    resultArray.forEach(function (value) {
-        sumData += value
-    })
-    document.write(sumData + " ");
-    document.write("<br/> <br/>  value,index,array<br/> ");
-    resultArray.forEach(function (value, index, array) {
-        document.write(value + " ");
-        //document.write(index+" ");
-        //document.write(array);
-    });
+//     Asyn Await (2.YOL)
+//     let resultAsynAwait = async () => {
+//         try {
+//             let isLogin = true;
+//             const isadmin = await login(isLogin);
+//             console.log("Login yapıldı Admin sayfasına yönlendiriliyorsunuz")
 
 
-}
-//showArrayData()
+//             let isJwtToken = true;
+//             const permission = await admin(isJwtToken);
+//             console.log(permission)
+//         } catch (err) {
+//             console.log(err);
+//             console.log(err.name);
+//             console.log(err.message);
+//         }
+//     }
+//     resultAsynAwait()
+// }
+// asynAwait3() 
 
-let popPush = () => {
-    let dizi = [1, 2, 3, 4, 5];
-    //push => elemanın sonuna eklemek
-    //unshift=>elemanın başına  eklemek
-    dizi.push(6)
-    dizi.unshift(0)
-    for (let i = 0; i < dizi.length; i++) {
-        document.write(dizi[i] + " ");
-    }
-    document.write("<br/>");
+// //////////////////////////////////////////////////////////////////////////////////
+// let arrayData = function () {
+//     diziler sıfırncı (indis) başlar
+//     let arr = [];
+//     arr[0] = "Merhabalar";
+//     arr[1] = 44;
+//     arr[2] = 55.63;
+//     arr[3] = true;
+//     console.log(arr);
+//     console.log(arr[0]);
+//     console.log(arr[3]);
+//     console.log(arr[arr.length - 1]);
+// }
+// arrayData();
 
-    //pop => elemanın sondan 1 eleman çıkar
-    dizi.pop()
-    dizi.shift()
-    //shift=>elemanın baştan 1 eleman başa çıkar
-    for (let i = 0; i < dizi.length; i++) {
-        document.write(dizi[i] + " ");
-    }
-    document.write("<br/>")
-    //delete dizi[0]
-    for (let i = 0; i < dizi.length; i++) {
-        document.write(dizi[i] + " ");
-    }
-}
-//popPush();
+// Random 5 tane sayı üretsin 
+// let createArrayData = () => {
+//     let temp;
+//     let dizi = [];
+//     for (let i = 0; i < 5; i++) {
+//         round: 3.4
+//         temp = Math.round(Math.random() * 7 + 1);
+//         dizi[i] = temp;
+//     }
+//     return dizi;
+// }
+
+// let showArrayData = () => {
+//     console.log(createArrayData());
+//     let resultArray = createArrayData();
+//     iterative for
+//     document.write("<br/>iterative for<br/>");
+//     for (let i = 0; i < resultArray.length; i++) {
+//         document.write(resultArray[i] + " ");
+//     }
+//     document.write("<br/>");
+
+//     For IN =>(for Over Index) eğer indis sayısı gerekiyorsa
+//     (dizideki indisler)
+//     for (let temp in resultArray) {
+//         document.write(temp + " ");
+//     }
+
+//     document.write("<br/>");
+//     document.write("<br/> for IN<br/>");
+//     for (let temp in resultArray) {
+//         document.write(resultArray[temp] + " ");
+//     }
+
+//     document.write("<br/>");
+//     For OF =>(for over member) 
+//     (dizideki elemanlar)
+//     document.write("<br/> for OF<br/>");
+//     for (let temp of resultArray) {
+//         document.write(temp + " ");
+//     }
+
+//     document.write("<br/>");
+//     document.write("<br/> forEach<br/>");
+//     dizi eleman toplamını
+//     let sumData = 0;
+//     resultArray.forEach(function (value) {
+//         sumData += value
+//     })
+//     document.write(sumData + " ");
+//     document.write("<br/> <br/>  value,index,array<br/> ");
+//     resultArray.forEach(function (value, index, array) {
+//         document.write(value + " ");
+//         document.write(index+" ");
+//         document.write(array);
+//     });
 
 
-let arrayData3 = () => {
-    let dizi = createArrayData();
-    for (let i = 0; i < dizi.length; i++) {
-        document.write(dizi[i] + " ");
-    }
-    document.write("<br/>");
+// }
+// showArrayData()
 
-    //sort: küçükten büyüğe doğru sıralamak
-    //dizi.sort();
+// let popPush = () => {
+//     let dizi = [1, 2, 3, 4, 5];
+//     push => elemanın sonuna eklemek
+//     unshift=>elemanın başına  eklemek
+//     dizi.push(6)
+//     dizi.unshift(0)
+//     for (let i = 0; i < dizi.length; i++) {
+//         document.write(dizi[i] + " ");
+//     }
+//     document.write("<br/>");
 
-    //reverse
-    //dizi.reverse();
+//     pop => elemanın sondan 1 eleman çıkar
+//     dizi.pop()
+//     dizi.shift()
+//     shift=>elemanın baştan 1 eleman başa çıkar
+//     for (let i = 0; i < dizi.length; i++) {
+//         document.write(dizi[i] + " ");
+//     }
+//     document.write("<br/>")
+//     delete dizi[0]
+//     for (let i = 0; i < dizi.length; i++) {
+//         document.write(dizi[i] + " ");
+//     }
+// }
+// popPush();
 
-    //Büyükten Küçüğe doğru sıralamak
-    dizi.sort().reverse()
 
-    for (let i = 0; i < dizi.length; i++) {
-        document.write(dizi[i] + " ");
-    }
-}
-//arrayData3()
+// let arrayData3 = () => {
+//     let dizi = createArrayData();
+//     for (let i = 0; i < dizi.length; i++) {
+//         document.write(dizi[i] + " ");
+//     }
+//     document.write("<br/>");
+
+//     sort: küçükten büyüğe doğru sıralamak
+//     dizi.sort();
+
+//     reverse
+//     dizi.reverse();
+
+//     Büyükten Küçüğe doğru sıralamak
+//     dizi.sort().reverse()
+
+//     for (let i = 0; i < dizi.length; i++) {
+//         document.write(dizi[i] + " ");
+//     }
+// }
+// arrayData3()
 
 // let arrayData4 = () => {
 //     let dizi = createArrayData();
@@ -643,244 +643,244 @@ let arrayData3 = () => {
 //     alert("Tıklandı")
 // }
 
-/*
-DOM: Document Object Module
-*/
-let domFunction = () => {
-    let result = "Veriler değiştirdim";
-    const data = document.getElementById("parag_id");
-    //const data=document.getElementById("parag_id").innerHTML="<h1>"+result+"</h1>";
+// /*
+// DOM: Document Object Module
+// */
+// let domFunction = () => {
+//     let result = "Veriler değiştirdim";
+//     const data = document.getElementById("parag_id");
+//     const data=document.getElementById("parag_id").innerHTML="<h1>"+result+"</h1>";
 
-    //const html = data.innerHTML = "<h1>" + result + "</h1>";
-    const text = data.innerText = "<h1>" + result + "</h1>";
-    data.style.color = "blue";
-}
+//     const html = data.innerHTML = "<h1>" + result + "</h1>";
+//     const text = data.innerText = "<h1>" + result + "</h1>";
+//     data.style.color = "blue";
+// }
 
-//object
-let objectData = () => {
+// object
+// let objectData = () => {
 
-    const person = {
-        firstName: "adı852",
-        lastname: "soyadı852",
-        isLogin: true,
-        tech: ["html5", "css3", "js", "devops", "java"],
-        js: {
-            value1: "dom data",
-            value2: "literal"
-        },
-        fullName: function () {
-            return `${this.firstName} - ${this.lastname}`
-        }
-    };
-    console.log(person);
-    console.log(typeof person);
+//     const person = {
+//         firstName: "adı852",
+//         lastname: "soyadı852",
+//         isLogin: true,
+//         tech: ["html5", "css3", "js", "devops", "java"],
+//         js: {
+//             value1: "dom data",
+//             value2: "literal"
+//         },
+//         fullName: function () {
+//             return `${this.firstName} - ${this.lastname}`
+//         }
+//     };
+//     console.log(person);
+//     console.log(typeof person);
 
-    //objeye yeni bir attributes 
-    console.log(person.firstName.toUpperCase());
-    person.gender = "E";
-    console.log(person.gender);
-    console.log(person.tech)
-    console.log(person.tech[0].substring(0, 3));
-    console.log(person.js.value1);
-    console.log(person.js.value2);
+//     objeye yeni bir attributes 
+//     console.log(person.firstName.toUpperCase());
+//     person.gender = "E";
+//     console.log(person.gender);
+//     console.log(person.tech)
+//     console.log(person.tech[0].substring(0, 3));
+//     console.log(person.js.value1);
+//     console.log(person.js.value2);
 
-    //Nested Object
-    console.log(person.js.value1);
-    console.log(person["js"]["value1"]);
+//     Nested Object
+//     console.log(person.js.value1);
+//     console.log(person["js"]["value1"]);
 
-    //function 
-    console.log(person.fullName());
+//     function 
+//     console.log(person.fullName());
 
-}
-//objectData()
+// }
+// objectData()
 
-//object for in
-let objectData2 = () => {
+// object for in
+// let objectData2 = () => {
 
-    const person = {
-        firstName: "adı852",
-        lastname: "soyadı852",
-        isLogin: true,
-        tech: ["html5", "css3", "js", "devops", "java"],
-        js: {
-            value1: "dom data",
-            value2: "literal"
-        },
-        fullName: function () {
-            return `${this.firstName} - ${this.lastname}`
-        }
-    };
+//     const person = {
+//         firstName: "adı852",
+//         lastname: "soyadı852",
+//         isLogin: true,
+//         tech: ["html5", "css3", "js", "devops", "java"],
+//         js: {
+//             value1: "dom data",
+//             value2: "literal"
+//         },
+//         fullName: function () {
+//             return `${this.firstName} - ${this.lastname}`
+//         }
+//     };
 
-    //for IN
-    let sumData = "";
-    for (let temp in person) {
-        sumData += person[temp]
-    }
-    console.log(sumData)
-}
-//objectData2()
-
-
-//object Constructor
-let objectData3 = () => {
-    //student object
-    let Student = function (studentName, studentSurname, number, computerAge) {
-        this.studentName = studentName;
-        this.studentSurname = studentSurname;
-        this.number = number;
-        this.computerAge = computerAge;
-        console.log(this);
-        this.pow = () => {
-            return number * number;
-        }
-        this.computerAge = function () {
-            //return 2022-computerAge;
-            return new Date().getFullYear() - computerAge;
-        }
-    }//end Student
-
-    //OOP
-    let result = new Student("adı44", "soyadı44", 4, 10);
-    console.log(result.studentName);
-    console.log(result.pow());
-    console.log("Bilgisayar alma zamanı: " + result.computerAge());
-    console.log(`Bilgisayar alma zamanı: ${result.computerAge()}`);
-}
-//objectData3()
-
-//Object Stringify
-let objectData4 = () => {
-    const person = {
-        firstName: "adı852",
-        lastname: "soyadı852",
-        isLogin: true,
-        tech: ["html5", "css3", "js", "devops", "java"],
-        js: {
-            value1: "dom data",
-            value2: "literal"
-        }
-    };
-    //JSON
-    // JSON String'e çevir
-    let jsonToString = JSON.stringify(person);
-    console.log(jsonToString)
-
-    //1.YOL
-    console.log(jsonToString.substring(14, 20));
-
-    //2.YOL
-    const data = jsonToString.indexOf("adı852");
-    console.log(jsonToString.substring(data, data + 6))
-
-    //3.YOL
-    const parseData = JSON.parse(jsonToString);
-    let firstNameValue = parseData.firstName;
-    console.log(firstNameValue)
-}
-//objectData4()
-
-//parametresiz  call,apply(parametresizde aynısı)  bind
-let objectData5 = () => {
-    let Student = function () {
-        console.log("Merhabalar " + this.adi);
-    }
-
-    //object attributes Student objesine bağladım
-    let objectData = { adi: " adım55" };
-    //Student.call(objectData);
-    //Student.apply(objectData);
-    let bindData = Student.bind(objectData);
-    bindData();
-}
-//objectData5()
-
-let objectData6 = () => {
-    let Student = function (data1, data2) {
-        console.log("Merhabalar " + data1 + " " + data2 + " " + this.adi);
-    }
-
-    //object attributes Student objesine bağladım
-    let objectData = { adi: " adım55" };
-    //Student.call(objectData, 'hibernate', 'myssql');
-    //Student.apply(objectData,['hibernate', 'myssql'])
-    let bindData = Student.bind(objectData, 'hibernate', 'myssql')
-    bindData();
-
-}
-//objectData6() 
-
-//ProtoType : hasOwnProperty( object)
-let objectData7 = () => {
-    //let objectData={};
-    //console.log(objectData);
-
-    let Student = function (adi, soyadi) {
-        this.adi = adi;
-        this.soyadi = soyadi;
-        console.log(this);
-    }; //end Student
-
-    let result = new Student("adı741", "soyadı741")
-    console.log("hasOwnProperty attributes   => " + result.hasOwnProperty("adi"))
-}
-//objectData7()
+//     for IN
+//     let sumData = "";
+//     for (let temp in person) {
+//         sumData += person[temp]
+//     }
+//     console.log(sumData)
+// }
+// objectData2()
 
 
-let objectData8 = () => {
-    let Student = function (adi, soyadi, yas) {
-        this.adi = adi;
-        this.soyadi = soyadi;
-        this.yas = yas;
-        console.log(this);
-    }; //end Student
+// object Constructor
+// let objectData3 = () => {
+//     student object
+//     let Student = function (studentName, studentSurname, number, computerAge) {
+//         this.studentName = studentName;
+//         this.studentSurname = studentSurname;
+//         this.number = number;
+//         this.computerAge = computerAge;
+//         console.log(this);
+//         this.pow = () => {
+//             return number * number;
+//         }
+//         this.computerAge = function () {
+//             return 2022-computerAge;
+//             return new Date().getFullYear() - computerAge;
+//         }
+//     }//end Student
 
-    //GETYAS
-    Student.prototype.getYas = function () {
-        return 2022 - this.yas;
-    }
+//     OOP
+//     let result = new Student("adı44", "soyadı44", 4, 10);
+//     console.log(result.studentName);
+//     console.log(result.pow());
+//     console.log("Bilgisayar alma zamanı: " + result.computerAge());
+//     console.log(`Bilgisayar alma zamanı: ${result.computerAge()}`);
+// }
+// objectData3()
 
-    //GETADI
-    Student.prototype.getAdi = function () {
-        return this.adi;
-    }
+// Object Stringify
+// let objectData4 = () => {
+//     const person = {
+//         firstName: "adı852",
+//         lastname: "soyadı852",
+//         isLogin: true,
+//         tech: ["html5", "css3", "js", "devops", "java"],
+//         js: {
+//             value1: "dom data",
+//             value2: "literal"
+//         }
+//     };
+//     JSON
+//     JSON String'e çevir
+//     let jsonToString = JSON.stringify(person);
+//     console.log(jsonToString)
 
-    //GETSOYADI
-    Student.prototype.getSoyadi = function () {
-        return this.soyadi;
-    }
+//     1.YOL
+//     console.log(jsonToString.substring(14, 20));
 
-    let result = new Student("adi89", "soyadi89", 10);
-    console.log(result.getAdi())
-    console.log(result.getYas())
-    console.log(result.getSoyadi())
-}
+//     2.YOL
+//     const data = jsonToString.indexOf("adı852");
+//     console.log(jsonToString.substring(data, data + 6))
 
-//objectData8();
+//     3.YOL
+//     const parseData = JSON.parse(jsonToString);
+//     let firstNameValue = parseData.firstName;
+//     console.log(firstNameValue)
+// }
+// objectData4()
 
-//Built-in constructor
-let objectData9 = () => {
+// parametresiz  call,apply(parametresizde aynısı)  bind
+// let objectData5 = () => {
+//     let Student = function () {
+//         console.log("Merhabalar " + this.adi);
+//     }
 
-    //kendi karekök 
-    String.prototype.myAttributeSqrt = function (data) {
-        return Math.abs(Math.sqrt(data));
-    }
-    console.log("".myAttributeSqrt(16));
+//     object attributes Student objesine bağladım
+//     let objectData = { adi: " adım55" };
+//     Student.call(objectData);
+//     Student.apply(objectData);
+//     let bindData = Student.bind(objectData);
+//     bindData();
+// }
+// objectData5()
 
-    //kendi karekök 
-    String.prototype.myAttributePow = function (data) {
-        return Math.abs(Math.pow(data, 2));
-    }
-    console.log("".myAttributePow(5));
+// let objectData6 = () => {
+//     let Student = function (data1, data2) {
+//         console.log("Merhabalar " + data1 + " " + data2 + " " + this.adi);
+//     }
 
-    // Kullanıcının vereceği sayıya göre kendisini tekrarlasın
-    String.prototype.repeatRecursive=function(data){
-        return new Array(data+1).join(this);
-    }
-    console.log("merhabalar ".repeatRecursive(2));
+//     object attributes Student objesine bağladım
+//     let objectData = { adi: " adım55" };
+//     Student.call(objectData, 'hibernate', 'myssql');
+//     Student.apply(objectData,['hibernate', 'myssql'])
+//     let bindData = Student.bind(objectData, 'hibernate', 'myssql')
+//     bindData();
 
-}
+// }
+// objectData6() 
 
-objectData9()
+// ProtoType : hasOwnProperty( object)
+// let objectData7 = () => {
+//     let objectData={};
+//     console.log(objectData);
+
+//     let Student = function (adi, soyadi) {
+//         this.adi = adi;
+//         this.soyadi = soyadi;
+//         console.log(this);
+//     }; //end Student
+
+//     let result = new Student("adı741", "soyadı741")
+//     console.log("hasOwnProperty attributes   => " + result.hasOwnProperty("adi"))
+// }
+// objectData7()
+
+
+// let objectData8 = () => {
+//     let Student = function (adi, soyadi, yas) {
+//         this.adi = adi;
+//         this.soyadi = soyadi;
+//         this.yas = yas;
+//         console.log(this);
+//     }; //end Student
+
+//     GETYAS
+//     Student.prototype.getYas = function () {
+//         return 2022 - this.yas;
+//     }
+
+//     GETADI
+//     Student.prototype.getAdi = function () {
+//         return this.adi;
+//     }
+
+//     GETSOYADI
+//     Student.prototype.getSoyadi = function () {
+//         return this.soyadi;
+//     }
+
+//     let result = new Student("adi89", "soyadi89", 10);
+//     console.log(result.getAdi())
+//     console.log(result.getYas())
+//     console.log(result.getSoyadi())
+// }
+
+// objectData8();
+
+// Built-in constructor
+// let objectData9 = () => {
+
+//     kendi karekök 
+//     String.prototype.myAttributeSqrt = function (data) {
+//         return Math.abs(Math.sqrt(data));
+//     }
+//     console.log("".myAttributeSqrt(16));
+
+//     kendi karekök 
+//     String.prototype.myAttributePow = function (data) {
+//         return Math.abs(Math.pow(data, 2));
+//     }
+//     console.log("".myAttributePow(5));
+
+//     Kullanıcının vereceği sayıya göre kendisini tekrarlasın
+//     String.prototype.repeatRecursive=function(data){
+//         return new Array(data+1).join(this);
+//     }
+//     console.log("merhabalar ".repeatRecursive(2));
+
+// }
+
+// objectData9()
 
 // object
 // npm
@@ -891,3 +891,213 @@ objectData9()
 // dockerize
 
 // ES5+ ...
+// ECMA: Betik dillerde bir standart kullanmak için vardır
+// European Computer Manufactures Association
+// ES5 , ES6 
+// Babel: +ES5 sürümlerde ES5 compiler yapmak.
+
+// Block Scope
+
+// var globalVariable="Global Veri";
+// let dataFunction=(globalVariable)=>{
+//     globalVariable+=" local data"
+//     console.log(globalVariable)
+// }
+// dataFunction(globalVariable)
+
+// Function Scope
+// function dataFunction2(){
+//     var number=44;
+//     console.log(number)
+// }
+// dataFunction2()
+// console.log(number)
+
+
+
+// let dataResult=()=>{
+//     //ES6 let-const
+// var data1="Data1";
+// console.log(data1);
+
+// var data1="Data11";
+// console.log(data1);
+
+// //let const
+// let data2="Data2";
+// let data22="Data2";
+//     //interpolation
+// let firstName="Adı99";
+// let lastName="Soyadı99";
+// console.log(`ADI: ${firstName} SOYADI: ${lastName}`)
+// }
+// //dataResult()
+
+// function normFuction(){
+//     console.log("Normal Function")
+// }
+// normFuction()
+
+// //ES5 Function
+// let anonymousFunction= function (){
+//     console.log("anonymous Function ")
+// }
+// anonymousFunction()
+
+
+// //ES6 Function
+// let arrowFunction=  ()=>{
+//     console.log("arrow Function ")
+// }
+// arrowFunction()
+
+// let data1 = () => {
+//     setInterval(() => { console.log("1.data") }, 3000)
+// }
+
+// let data2 = () => {
+//     setInterval(() => { console.log("2.data") }, 1000)
+// }
+//data1()
+//data2()
+
+//CALLBACK
+let callbackFunctionData = () => {
+    //Initial Data
+    const person = [
+        { personUsername: "username1", personEmailAddress: "emailaddress1", personPassword: "password1" },
+        { personUsername: "username2", personEmailAddress: "emailaddress2", personPassword: "password2" },
+        { personUsername: "username3", personEmailAddress: "emailaddress3", personPassword: "password3" },
+    ];
+
+    //SHOW  
+    const listPerson = () => {
+        person.map(temp => {
+            console.log(`Adı: ${temp.personUsername} Email: ${temp.personEmailAddress}`)
+        });
+    }
+
+    //PUSH
+    const addPerson = (specialPersonData, callback) => {
+        person.push(specialPersonData);
+        callback();
+    }
+    addPerson({ personUsername: "username4", personEmailAddress: "emailaddress4", personPassword: "password4" }, listPerson)
+}
+//callbackFunctionData()
+
+//PROMISE
+let promiseFunctionData = () => {
+    //Initial Data
+    const person = [
+        { personUsername: "username1", personEmailAddress: "emailaddress1", personPassword: "password1" },
+        { personUsername: "username2", personEmailAddress: "emailaddress2", personPassword: "password2" },
+        { personUsername: "username3", personEmailAddress: "emailaddress3", personPassword: "password3" },
+    ];
+
+    //SHOW  
+    const listPerson = () => {
+        person.map(temp => {
+            console.log(`Adı: ${temp.personUsername} Email: ${temp.personEmailAddress}`)
+        });
+    }
+
+    //PUSH
+    //CallBackFunction
+    // const addPerson = (specialPersonData, callback) => {
+    //     person.push(specialPersonData);
+    //     callback();
+    // }
+    // addPerson({ personUsername: "username4", personEmailAddress: "emailaddress4", personPassword: "password4" }, listPerson)
+
+    //PUSH
+    //Promise
+    const addPerson = (specialPersonData) => {
+        const instancePromise = new Promise((resolve, reject) => {
+            person.push(specialPersonData);
+        });
+        return instancePromise;
+    };
+    addPerson({ personUsername: "username4", personEmailAddress: "emailaddress4", personPassword: "password4" })
+        .then(() => {
+            console.log("person data item")
+        }).catch((error) => {
+            //console.log(error.message)
+            console.log(error)
+        })
+    listPerson()
+}
+//promiseFunctionData()
+
+
+//PROMISE
+let callBackPromiseAsyncAwaitData = () => {
+    //Initial Data
+    const person = [
+        { personUsername: "username1", personEmailAddress: "emailaddress1", personPassword: "password1" },
+        { personUsername: "username2", personEmailAddress: "emailaddress2", personPassword: "password2" },
+        { personUsername: "username3", personEmailAddress: "emailaddress3", personPassword: "password3" },
+    ];
+
+    //SHOW  
+    const listPerson = () => {
+        person.map(temp => {
+            console.log(`Adı: ${temp.personUsername} Email: ${temp.personEmailAddress}`)
+        });
+    }
+
+    //PUSH
+    //CallBackFunction
+    // const addPerson = (specialPersonData, callback) => {
+    //     person.push(specialPersonData);
+    //     callback();
+    // }
+    // addPerson({ personUsername: "username4", personEmailAddress: "emailaddress4", personPassword: "password4" }, listPerson)
+
+    //PUSH
+    //Promise
+    const addPerson=(specialPersonData)=>{
+        const instancePromise=new Promise((resolve,reject)=>{
+            person.push(specialPersonData);
+        });
+        return instancePromise;
+    };
+
+
+    //  addPerson({ personUsername: "username4", personEmailAddress: "emailaddress4", personPassword: "password4" })
+    //  .then(()=>{
+    //     console.log("person data item")
+    //  }).catch((error)=>{
+    //    //console.log(error.message)
+    //    console.log(error)
+    //  })
+    //  listPerson()
+
+    //PUSH
+    //Async Await
+    const personAsyncAwait = async () => {
+        const personData = await addPerson({ personUsername: "username4", personEmailAddress: "emailaddress4", personPassword: "password4" })
+    }
+    personAsyncAwait();
+    listPerson();
+}
+//callBackPromiseAsyncAwaitData()
+
+//spread:metoda dizi gönder
+//Normal dizi göndermek
+function getArray(x,y,z){
+    return x+y+z;
+}
+console.log("NORMAL => "+getArray(5,10,15));
+
+let arrayPush=[5,10,15]
+//ES5
+console.log("ES5 => "+getArray.apply(null,arrayPush))
+//ES6
+console.log("ES6 => "+getArray(...arrayPush))
+
+//ES5 (Class)
+
+//ES6 (Class)
+
+//extends 
