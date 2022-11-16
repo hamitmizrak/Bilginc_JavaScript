@@ -51,7 +51,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="44">
     <!-- start codes -->
 
-    <!-- menu  start -->
+    <!-- navbar  start -->
     <div class="container-fluid" style="position: fixed!important; top:0; z-index: 4;">
         <nav id="back-top" class="navbar   navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -182,10 +182,57 @@
 
         <hr>
         <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form action="">
+                            <!-- ID -->
+                            <div class="form-group mt-5">
+                                <label for="post_id">ID</label>
+                                <input type="text" class="form-control" id="post_id" placeholder="id yazınız"
+                                    required />
+                            </div>
+
+                            <!-- ADI -->
+                            <div class="form-group mt-4">
+                                <label for="post_name"></label>
+                                <input type="text" class="form-control" id="post_name" placeholder="Adınız" required />
+                            </div>
+
+                            <!-- SOYADI -->
+                            <div class="form-group mt-4">
+                                <label for="post_surname"></label>
+                                <input type="text" class="form-control" id="post_surname" placeholder="Soyadınız"
+                                    required />
+                            </div>
+                        </form><!-- end form  -->
+                    </div><!-- end col-md-6  -->
+                    <div class="col-md-6">
+                        <table class="table-hover table-striped mt-5">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>ADI</th>
+                                    <th>SOYADI</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody_id">
+
+                            </tbody>
+                        </table> <!-- end table -->
+                    </div><!-- end col-md-6  -->
+                    <button class="btn btn-primary ms-4" id="ajaxPost">Verileri Gönder</button>
+                    <button class="btn btn-warning ms-4" id="ajaxGet">Verileri Listelemek</button>
+
+                </div> <!-- end row  -->
+            </div> <!-- end container  -->
 
         </section>
     </main>
     <!-- end main -->
+    <div style="margin-top:3rem">
+        margin
+    </div>
 
     <!-- start footer -->
     <footer>

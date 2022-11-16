@@ -103,3 +103,50 @@ $(document).ready(function () {
 
 //////////////////////////////////////////////////////////////////////////////
 //## AJAX ##
+
+// GET
+$(function () {
+    $('#ajaxGet').click(function () {
+        let BASE_URL = "http://localhost:4444";
+        let tbody = $('#tbody_id');
+        $.ajax({
+            method: "GET",
+            url: BASE_URL + "/posts"
+        }).done(function (datas) {
+            for (let i = 0; i < 20; i++) {
+                let trHtml = "";
+                trHtml += '<tr><td>' + datas[i].id + '</td><td>' + datas[i].name + '</td><td>' + datas[i].surname + '</td><tr>';
+                tbody.append(trHtml);
+            } // end for
+        })//end done
+            .fail(function () {
+                alert("Listeleme hata meydana geldi. Server çalışmıyor olabilir.")
+            })
+    });
+}); //end GET document.ready
+
+// POST
+$(function () {
+    $('#ajaxPost').click(function () {
+        let BASE_URL = "http://localhost:4444";
+        let tbody = $('#tbody_id');
+        $.ajax({
+            method: "POST",
+            url: BASE_URL + "/posts",
+            data: {
+                "id": $("#post_id").val(),
+                "name": $("#post_name").val(),
+                "surname": $('#post_surname').val()
+            }
+        }).done(function (datas) {
+            for (let i = 0; i < 20; i++) {
+                let trHtml = "";
+                trHtml += '<tr><td>' + datas[i].id + "</td><td>" + datas[i].name + '</td><td>' + datas[i].surname + '</td></tr>';
+                tbody.append(trHtml);
+            }//end for
+        }).fail(function () {
+            alert("Ekleme sırasında hata meydana geldi belki server'i açmadınız")
+        }); //end fail
+    });
+
+}); //end POST document.ready

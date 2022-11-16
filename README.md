@@ -3,7 +3,16 @@
 ## Node
 node -v
 npm -v
---
+----
+
+
+```sh
+persist URL : 
+JSONPLACEHOLDER : https://jsonplaceholder.typicode.com/
+GİTHUB          : https://github.com/hamitmizrak/Bilginc_JavaScript.git
+```
+----
+
 
 ```sh
 npm -v
@@ -17,7 +26,7 @@ npm search packageName
 npm root -g
 npm list -g
 ```
---
+----
 
 ```sh
 npm run dev    ==> test       (2.47 KB)
@@ -25,13 +34,12 @@ npm run build  ==> production (224 byte)
 live-server
 npm run start
 ```
---
+----
 
 ```sh
 -- WEBPACK
 npm install webpack --save-dev
 npm install webpack-cli --save-dev
-npm install -g live-server
 npm install webpack-dev-server --save-dev
 npm install html-webpack-plugin --save-dev
 
@@ -47,6 +55,15 @@ npm uninstall bootstrap
 npm i
 
 ```
+----
+
+```sh
+npm install -g live-server
+npm install -g json-server
+c:\restapi\restExamples\fakeApi.json ==> json-server --watch fakeApi.json --port 4444
+json-server --watch fakeApi.json --port 4444
+```
+----
 
 
 ```sh
