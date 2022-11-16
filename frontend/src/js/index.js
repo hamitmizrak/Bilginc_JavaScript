@@ -141,7 +141,7 @@ $(function () {
         }).done(function (datas) {
             for (let i = 0; i < 20; i++) {
                 let trHtml = "";
-                trHtml += '<tr><td>' + datas[i].id + "</td><td>" + datas[i].name + '</td><td>' + datas[i].surname + '</td></tr>';
+                trHtml += '<tr><td>' + datas[i].id + "</td><td>" + datas[i].name + '</td><td>' + datas[i].surname + '</td><td><i class="fa-solid fa-trash"></i></td>  </tr>';
                 tbody.append(trHtml);
             }//end for
         }).fail(function () {
