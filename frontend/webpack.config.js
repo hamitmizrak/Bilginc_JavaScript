@@ -11,10 +11,13 @@ module.exports = {
         filename: 'js/bundle.js'
     }, //end output
 
+    watch:true,
+
     //mode: 'development'
     //Server-pack
     devServer: {
-        //contentBase: 'dist'
+        // contentBase: 'dist'
+        // contentBase:path.resolve(__dirname,'dist'),
         static: {
             directory: path.join(__dirname, './dist'),
         }
@@ -44,6 +47,10 @@ module.exports = {
                     }
                 } //end user
             } //end rules
+            ,{
+                test: /\.scss$/,
+                use:['style-loader','css-loader','sass-loader']
+            }
         ] //end rules
     } //end module
 

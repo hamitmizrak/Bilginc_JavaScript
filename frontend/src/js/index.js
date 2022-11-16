@@ -14,6 +14,7 @@ const helloWorld = () => {
 helloWorld();
 
 
+
 // CORS
 $(document).ready(function () {
     const URL = "http://localhost:9090/api/v1/cors";
