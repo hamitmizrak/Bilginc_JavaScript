@@ -102,19 +102,20 @@
                 </div>
                 <div class="modal-body">
                     <h3 class="text-center">Üye Giriş</h3>
-                    <form id="basic-form" action="" method="get">
-
+                    <form>
                         <div class="form-group">
-                            <input id="name" name="name" class="form-control" placeholder="email adresiniz">
+                            <input type="text" id="user_email" name="user_email" class="form-control" placeholder="email adresiniz" required>
+                             <span id="validation_email" class="text-danger"></span>
                         </div>
 
                         <div class="form-group">
-                            <input id="password" name="password" class="form-control" placeholder="Şifreniz">
+                            <input type="text" id="user_password" name="user_password" class="form-control" placeholder="Şifreniz" required>
+                          <span id="validation_password" class="text-danger"></span>
                         </div>
 
                         <div class="btn-group mt-3">
                             <input type="reset" class="btn btn-danger mr-3" value="Temizle">
-                            <input type="submit" class="btn btn-primary" value="Gönder">
+                            <button type="submit" id="btnSubmit" class="btn btn-primary">Gönder</button>
                         </div>
                     </form>
                 </div>
