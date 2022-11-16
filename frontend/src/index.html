@@ -19,6 +19,29 @@
 
     <!-- External Css -->
     <link rel="stylesheet" href="../src/style.css" />
+
+    <style>
+        /* Register Validation */
+        input.error,
+        textarea.error {
+            border: 1px dashed red;
+            font-weight: 300;
+            color: red;
+        }
+
+        label.error.fail-alert {
+            border: 2px solid red;
+            border-radius: 4px;
+            line-height: 1;
+            padding: 2px 0 6px 6px;
+            color: red;
+        }
+
+        input.valid.success-alert {
+            border: 2px solid #4CAF50;
+            color: green;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="44">
@@ -70,72 +93,40 @@
     </div>
 
 
-    <!-- Login -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="loginId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
-        aria-labelledby="modalTitleId" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl" role="document">
+    <!-- Modal  login -->
+    <div class="modal fade" name="registration" id="loginId" role="dialog">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="get">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-2">email Adres</div>
-                                <div class="col-md-10">
-                                    <input type="text" id="email_id" class="form-control" autofocus />
-                                </div>
+                    <h3 class="text-center">Üye Giriş</h3>
+                    <form id="basic-form" action="" method="get">
 
-                                <div class="col-md-2">password</div>
-                                <div class="col-md-10">
-                                    <input type="password" id="password_id" class="form-control" />
-                                </div>
-
-                                <div class="col-md-2"></div>
-                                <div class="col-md-10">
-                                    <input type="reset" class="btn btn-danger mr-3" value="Temizle" />
-                                    <button type="submit" class="btn btn-primary" id="submit_id">Gönder</button>
-                                </div>
-
-                            </div>
+                        <div class="form-group">
+                            <input id="name" name="name" class="form-control" placeholder="email adresiniz">
                         </div>
 
+                        <div class="form-group">
+                            <input id="password" name="password" class="form-control" placeholder="Şifreniz">
+                        </div>
+
+                        <div class="btn-group mt-3">
+                            <input type="reset" class="btn btn-danger mr-3" value="Temizle">
+                            <input type="submit" class="btn btn-primary" value="Gönder">
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type=button class="btn btn-danger" data-dismiss="modal">Kapat</button>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <style>
-        input.error,
-        textarea.error {
-            border: 1px dashed red;
-            font-weight: 300;
-            color: red;
-        }
-
-        label.error.fail-alert {
-            border: 2px solid red;
-            border-radius: 4px;
-            line-height: 1;
-            padding: 2px 0 6px 6px;
-
-            color: red;
-        }
-
-        input.valid.success-alert {
-            border: 2px solid #4CAF50;
-            color: green;
-        }
-    </style>
-
+    <!--  Modal register -->
     <div class="modal fade" name="registration" id="registerId" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
