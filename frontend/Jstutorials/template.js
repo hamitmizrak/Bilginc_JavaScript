@@ -1163,7 +1163,7 @@ let data3 = () => {
 
 
 }
-data3()
+//data3()
 
 //extends constructor
 let data4 = () => {
@@ -1205,4 +1205,73 @@ let data4 = () => {
     console.log(`ADI: ${instanceTeacher.adi} SOYADI: ${instanceTeacher.soyadi} Hescode: ${instanceTeacher.hesCode} Kalan Kitap: ${instanceTeacher.okuma()}`)
 
 }
-data4()
+//data4()
+
+
+//////////////////////////////////////////////////
+//Destructuring 
+let destructuringData = () => {
+    let user1, user2, user3;
+    user1 = 10;
+    user2 = 20;
+    user3 = user1 + user2;
+
+    //1.YOL
+    // console.log("1.YOL Normal:"+user1+"+"+user2+"= "+(user3));
+
+    //2.YOL
+    //console.log(`2.YOL Interpolations: ${user1}+ ${user2}+= ${user3}`)
+
+    let user4, user5;
+    //3.YOL
+    [user4, user5] = [5, 10]
+    console.log(`3.YOL Destructuring: (${user4} +${user5})+= `)
+
+    let user6, user7;
+    ({ user6, user7 } = { user6: 60, user7: 70 })
+    console.log(`4.YOL Destructuring: (${user6}+ ${user7})`)
+
+
+    let user8, user9, restParameter;
+    [user8, user9, ...restParameter] = [80, 90, 1, 2, 3, 4, 5];
+    console.log(`5.YOL Destructuring: ${user8} - ${user9} [${restParameter[0]},${restParameter[1]},${restParameter[2]}]`)
+}
+//destructuringData()
+
+//destructuring Array
+let destructuringArrayServer = () => {
+
+    //array variable
+    const serverArray = ["localhost", "8080", "7777"];
+
+    //NORMAL Varaible
+    const dnsInfo1 = serverArray[0];
+    const publicPort1 = serverArray[1];
+    const specialPort1 = serverArray[2];
+    console.log(`${dnsInfo1} ${publicPort1} ${specialPort1} `)
+
+    //destructuring
+    const [dnsInfo2, publicPort2, specialPort3] = serverArray;
+    console.log(dnsInfo2, publicPort2, specialPort3)
+}
+destructuringArrayServer()
+
+
+//destructuring Object
+let destructuringObjectServer = () => {
+
+    //object variable
+    const serverObject = {
+        dnsInfo3: "localhost",
+        publicPort3: "8080",
+        specialPort3: "7777"
+    };
+
+    //NORMAL
+    console.log(`${serverObject.dnsInfo3} ${serverObject.publicPort3} ${serverObject.specialPort3} `)
+
+    //Object destructuring
+    const {dnsInfo3,publicPort3,specialPort3}=serverObject;
+    console.log(`${dnsInfo3} ${publicPort3} ${specialPort3}`)
+}
+destructuringObjectServer();
