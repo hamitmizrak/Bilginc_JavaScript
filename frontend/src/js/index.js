@@ -14,8 +14,9 @@ const helloWorld = () => {
 helloWorld();
 
 
+//////////////////////////////////////////////////////////////////////////////
 
-// CORS
+//## CORS ##
 $(document).ready(function () {
     const URL = "http://localhost:9090/api/v1/cors";
     $.get(URL, function (data, status) {
@@ -24,8 +25,8 @@ $(document).ready(function () {
     }); //end  $.get
 });
 
-
-// login :
+//////////////////////////////////////////////////////////////////////////////
+//## LOGIN ##
 $(function () {
     $("#btnSubmit").click(function () {
         let user_email, user_password;
@@ -56,18 +57,13 @@ $(function () {
         if (user_password == "") {
             $('#validation_password').html("Şifre Alanı boş geçilemez");
         }
-
-
-
-
     });
 })
 
-
-//login register
-//registerId  registerModal
+//////////////////////////////////////////////////////////////////////////////
+//## REGISTER ##
 $(document).ready(function () {
-    $("#basic-form").validate({
+    $("#cdn_register_validation").validate({
         errorClass: "error fail-alert",
         validClass: "valid success-alert",
         rules: {
@@ -103,3 +99,7 @@ $(document).ready(function () {
         },
     });
 });
+
+
+//////////////////////////////////////////////////////////////////////////////
+//## AJAX ##
