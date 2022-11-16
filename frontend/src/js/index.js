@@ -49,7 +49,8 @@ $(function () {
 
         /* validation email */
         let validateEmail = (user_email) => {
-            const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;;
+            const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            ;
             return regex.test(user_email);
         }
 
@@ -115,7 +116,14 @@ $(function () {
         }).done(function (datas) {
             for (let i = 0; i < 20; i++) {
                 let trHtml = "";
-                trHtml += '<tr><td>' + datas[i].id + '</td><td>' + datas[i].name + '</td><td>' + datas[i].surname + '</td><tr>';
+                trHtml +=
+                    `
+                    <tr>
+                        <td>${datas[i].id}</td>
+                        <td>${datas[i].name}</td>
+                        <td>${datas[i].surname}</td>
+                   </tr>
+                    `;
                 tbody.append(trHtml);
             } // end for
         })//end done

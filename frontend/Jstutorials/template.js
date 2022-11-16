@@ -1056,8 +1056,8 @@ let callBackPromiseAsyncAwaitData = () => {
 
     //PUSH
     //Promise
-    const addPerson=(specialPersonData)=>{
-        const instancePromise=new Promise((resolve,reject)=>{
+    const addPerson = (specialPersonData) => {
+        const instancePromise = new Promise((resolve, reject) => {
             person.push(specialPersonData);
         });
         return instancePromise;
@@ -1085,19 +1085,124 @@ let callBackPromiseAsyncAwaitData = () => {
 
 //spread:metoda dizi gönder
 //Normal dizi göndermek
-function getArray(x,y,z){
-    return x+y+z;
+function getArray(x, y, z) {
+    return x + y + z;
 }
-console.log("NORMAL => "+getArray(5,10,15));
+//console.log("NORMAL => " + getArray(5, 10, 15));
 
-let arrayPush=[5,10,15]
+let arrayPush = [5, 10, 15]
 //ES5
-console.log("ES5 => "+getArray.apply(null,arrayPush))
+//console.log("ES5 => " + getArray.apply(null, arrayPush))
 //ES6
-console.log("ES6 => "+getArray(...arrayPush))
+//console.log("ES6 => " + getArray(...arrayPush))
 
 //ES5 (Class)
+let data1 = () => {
+    let Person = function Person(adi, soyadi, kitap) {
+        this.adi = adi;
+        this.soyadi = soyadi;
+        this.kitap = kitap;
+        console.log(this)
+        this.okuma = function () {
+            return 10 - kitap;
+        }
+    }
+    let instancePerson = new Person("adi55", "soyadi55", 5);
+    console.log(`ADI: ${instancePerson.adi} SOYADI: ${instancePerson.soyadi} Kalan Kitap: ${instancePerson.okuma()}`)
+}
+//data1()
 
 //ES6 (Class)
+let data2 = () => {
+    //Class
+    class Person {
+        //constructor parametreli
+        constructor(adi = "adi girilmedi", soyadi = "soyadı girilmedi", kitap = 10) {
+            this.adi = adi;
+            this.soyadi = soyadi;
+            this.kitap = kitap;
+            console.log("Constructor buradaydı")
+        }
+
+        //Function
+        okuma() {
+            return 10 - this.kitap;
+        }
+    } //end class
+    let instancePerson = new Person("adi55", "soyadi55", 5);
+    console.log(`ADI: ${instancePerson.adi} SOYADI: ${instancePerson.soyadi} Kalan Kitap: ${instancePerson.okuma()}`)
+
+}
+//data2()
 
 //extends 
+let data3 = () => {
+    //Class
+    class Person {
+        //constructor parametreli
+        constructor(adi = "adi girilmedi", soyadi = "soyadı girilmedi", kitap = 10) {
+            this.adi = adi;
+            this.soyadi = soyadi;
+            this.kitap = kitap;
+            console.log("Constructor buradaydı")
+        }
+
+        //Function
+        okuma() {
+            return 10 - this.kitap;
+        }
+    } //end class
+    let instancePerson = new Person("adi55", "soyadi55", 5);
+    console.log(`ADI: ${instancePerson.adi} SOYADI: ${instancePerson.soyadi} Kalan Kitap: ${instancePerson.okuma()}`)
+
+    //Extends
+    class Student extends Person { }
+
+    let instanceStudent = new Person("adi55", "soyadi55", 5);
+    console.log(`ADI: ${instanceStudent.adi} SOYADI: ${instanceStudent.soyadi} Kalan Kitap: ${instanceStudent.okuma()}`)
+
+
+}
+data3()
+
+//extends constructor
+let data4 = () => {
+    //PERSON CLASS
+    class Person {
+        constructor(adi = "adi girilmedi", soyadi = "soyadı girilmedi", kitap = 10) {
+            this.adi = adi;
+            this.soyadi = soyadi;
+            this.kitap = kitap;
+            console.log("Constructor buradaydı")
+        }
+
+        okuma() {
+            return 10 - this.kitap;
+        }
+    }
+    let instancePerson = new Person("adi55", "soyadi55", 5);
+    console.log(`ADI: ${instancePerson.adi} SOYADI: ${instancePerson.soyadi} Kalan Kitap: ${instancePerson.okuma()}`)
+
+    //STUDENT CLASS
+    //Extends Student
+    class Student extends Person { }
+    let instanceStudent = new Person("adi55", "soyadi55", 5);
+    console.log(`ADI: ${instanceStudent.adi} SOYADI: ${instanceStudent.soyadi} Kalan Kitap: ${instanceStudent.okuma()}`)
+
+
+    //TEACHER CLASS
+    // Extends constructor Teacher
+    class Teacher extends Person {
+        constructor(adi, soyadi, kitap, hesCode = "hescodes deafault XLM45") {
+            //super class gelen attributes
+            super(adi, soyadi, kitap);
+            this.hesCode = hesCode;
+        }
+    }//end class
+
+    let instanceTeacher = new Teacher("adi55", "soyadi55", 5, "hesXML84");
+    console.log(instanceTeacher);
+    console.log(`ADI: ${instanceTeacher.adi} SOYADI: ${instanceTeacher.soyadi} Hescode: ${instanceTeacher.hesCode} Kalan Kitap: ${instanceTeacher.okuma()}`)
+
+}
+data4()
