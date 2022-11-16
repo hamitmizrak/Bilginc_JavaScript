@@ -148,5 +148,4 @@ $(function () {
             alert("Ekleme sırasında hata meydana geldi belki server'i açmadınız")
         }); //end fail
     });
-
 }); //end POST document.ready
