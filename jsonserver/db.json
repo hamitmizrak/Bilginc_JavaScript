@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "name": "Hamit",
+      "surname": "Mızrak",
+      "id": 1
+    },
+    {
+      "name": "Deneme adı",
+      "surname": "Deneme soyadı",
+      "id": 2
+    },
+    {
+      "name": "Deneme adı4",
+      "surname": "Deneme soyadı4",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

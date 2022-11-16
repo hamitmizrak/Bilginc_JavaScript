@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <!-- finish codes -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
     <!-- External Css -->
@@ -184,31 +184,33 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <form action="">
+                    <div class="col-md-4">
+                        <form action="GET">
                             <!-- ID -->
-                            <div class="form-group mt-5">
+                            <!-- <div class="form-group mt-5">
                                 <label for="post_id">ID</label>
                                 <input type="text" class="form-control" id="post_id" placeholder="id yazınız"
                                     required />
-                            </div>
+                            </div> -->
 
                             <!-- ADI -->
                             <div class="form-group mt-4">
-                                <label for="post_name"></label>
+                                <label for="post_name">ADINIZ</label>
                                 <input type="text" class="form-control" id="post_name" placeholder="Adınız" required />
                             </div>
 
                             <!-- SOYADI -->
                             <div class="form-group mt-4">
-                                <label for="post_surname"></label>
+                                <label for="post_surname">SOYADINIZ</label>
                                 <input type="text" class="form-control" id="post_surname" placeholder="Soyadınız"
                                     required />
                             </div>
                         </form><!-- end form  -->
+                        <button class="btn btn-primary ms-4" id="ajaxPost">Verileri Gönder</button>
+                        <button class="btn btn-warning ms-4" id="ajaxGet">Verileri Listelemek</button>
                     </div><!-- end col-md-6  -->
-                    <div class="col-md-6">
-                        <table class="table-hover table-striped mt-5">
+                    <div class="col-md-8">
+                        <table class="table table-hover table-striped mt-5">
                             <thead>
                                 <tr>
                                     <th>ID</th>
@@ -221,8 +223,7 @@
                             </tbody>
                         </table> <!-- end table -->
                     </div><!-- end col-md-6  -->
-                    <button class="btn btn-primary ms-4" id="ajaxPost">Verileri Gönder</button>
-                    <button class="btn btn-warning ms-4" id="ajaxGet">Verileri Listelemek</button>
+
 
                 </div> <!-- end row  -->
             </div> <!-- end container  -->

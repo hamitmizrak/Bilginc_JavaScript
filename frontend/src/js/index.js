@@ -134,7 +134,7 @@ $(function () {
             method: "POST",
             url: BASE_URL + "/posts",
             data: {
-                "id": $("#post_id").val(),
+                //"id": $("#post_id").val(),
                 "name": $("#post_name").val(),
                 "surname": $('#post_surname').val()
             }
@@ -148,4 +148,5 @@ $(function () {
             alert("Ekleme sırasında hata meydana geldi belki server'i açmadınız")
         }); //end fail
     });
+    $('#ajaxGet').trigger("click");
 }); //end POST document.ready
